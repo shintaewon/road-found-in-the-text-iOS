@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LZ4-5H-svf">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Page View Controller-->
+        <scene sceneID="fBe-EJ-60j">
+            <objects>
+                <viewController storyboardIdentifier="MyPageViewController" id="nye-5q-bYp" customClass="MyPageViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rpm-g4-OtB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="V4f-41-zFK">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="nye-5q-bYp" id="TEZ-Vo-d2L"/>
+                                    <outlet property="delegate" destination="nye-5q-bYp" id="rB3-qe-1b3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="o3N-DP-WBr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V4f-41-zFK" firstAttribute="leading" secondItem="o3N-DP-WBr" secondAttribute="leading" id="Lgn-rv-jBx"/>
+                            <constraint firstItem="o3N-DP-WBr" firstAttribute="bottom" secondItem="V4f-41-zFK" secondAttribute="bottom" id="m2r-1O-jlC"/>
+                            <constraint firstItem="V4f-41-zFK" firstAttribute="top" secondItem="o3N-DP-WBr" secondAttribute="top" id="vid-3v-C0d"/>
+                            <constraint firstItem="o3N-DP-WBr" firstAttribute="trailing" secondItem="V4f-41-zFK" secondAttribute="trailing" id="wSv-yO-4s3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jra-3B-boi"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="V4f-41-zFK" id="XbB-ZB-AZB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oLe-d2-rNc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.22137404580153" y="-2.1126760563380285"/>
+        </scene>
+        <!--마이페이지-->
+        <scene sceneID="6Ys-M4-vF3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LZ4-5H-svf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="마이페이지" image="ic_mypage_gray" id="Uyo-Yf-9E9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UBz-1P-lcr">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nye-5q-bYp" kind="relationship" relationship="rootViewController" id="by3-pc-2J1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qyi-Qv-Td0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-785.49618320610682" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_mypage_gray" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

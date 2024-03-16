@@ -1,0 +1,24 @@
+PODS:
+  - DLRadioButton (1.4.12)
+  - IQKeyboardManagerSwift (6.5.11)
+  - lottie-ios (4.2.0)
+
+DEPENDENCIES:
+  - DLRadioButton (~> 1.4)
+  - IQKeyboardManagerSwift
+  - lottie-ios
+
+SPEC REPOS:
+  trunk:
+    - DLRadioButton
+    - IQKeyboardManagerSwift
+    - lottie-ios
+
+SPEC CHECKSUMS:
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
+  lottie-ios: 809ecf2d460ed650a6aed7aa88b2ec45fab4779c
+
+PODFILE CHECKSUM: 26842749eb3dcf3139bd7b5b28b2d11829af5f19
+
+COCOAPODS: 1.12.1
