@@ -43,10 +43,3 @@
 8. lottie-ios
 ```
 
----
-
-## 시연영상
-
-https://github.com/shintaewon/Mbtiary_iOS/assets/53418280/6d82d282-b0f8-4448-95c0-de18f4556b67
-
-
